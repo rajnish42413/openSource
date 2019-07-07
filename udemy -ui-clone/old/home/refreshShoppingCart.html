@@ -1,0 +1,71 @@
+<div class="col-lg-9">
+
+    <div class="in-cart-box">
+        <div class="title">1 Courses In Cart</div>
+        <div class="">
+            <ul class="cart-course-list">
+                                    <li>
+                        <div class="cart-course-wrapper">
+                            <div class="image">
+                                <a href="course/n-a/index.html">
+                                    <img src="../uploads/thumbnails/thumbnail.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="course/n-a/index.html">
+                                    <div class="name"></div>
+                                </a>
+                                <a href="instructor_page/1.html">
+                                    <div class="instructor">
+                                        By                                        <span class="instructor-name">Dianna Bennett</span>,
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="move-remove">
+                                <div id = "" onclick="removeFromCartList(this)">Remove</div>
+                                <!-- <div>Move to Wishlist</div> -->
+                            </div>
+                            <div class="price">
+                                <a href="#">
+                                                                            <div class="current-price">
+                                                                                    </div>
+                                                                        <span class="coupon-tag">
+                                        <i class="fas fa-tag"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="col-lg-3">
+    <div class="cart-sidebar">
+        <div class="total">Total:</div>
+        <span id = "total_price_of_checking_out" hidden>0</span>
+        <div class="total-price"></div>
+        <div class="total-original-price">
+            <span class="original-price"></span>
+            <!-- <span class="discount-rate">95% off</span> -->
+        </div>
+        <button type="button" class="btn btn-primary btn-block checkout-btn" onclick="handleCheckOut()">Checkout</button>
+    </div>
+</div>
+<script type="text/javascript">
+function handleCheckOut() {
+    $.ajax({
+        url: 'http://creativeitem.com/demo/academy/home/isLoggedIn',
+        success: function(response)
+        {
+            if (!response) {
+                $('#signInModal').modal('show');
+            }else {
+                $('#paymentModal').modal('show');
+                $('.total_price_of_checking_out').val($('#total_price_of_checking_out').text());
+            }
+        }
+    });
+}
+</script>

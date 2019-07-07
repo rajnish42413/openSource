@@ -1,0 +1,26 @@
+@media (max-width:1199px) {
+
+#section-two #two-sale {
+  width: 97%;
+  margin-left: 14px;
+}
+}
+@media (max-width:990px) {
+	#section-two{
+		margin-top: 20px;
+	}
+	#section-two #two-sale{
+		margin-left: 12px;
+	}
+	#section-two #two-two{
+		width: 100%;
+		border-top: 1px solid white;
+	}
+   #section-four #four-one .four-two {
+    margin-top: 50px;
+}
+}
+@media (max-width:1330px) {
+
+
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+body{
+    background-color: #E9EBEE;
+}
+#menu-bloggr{
+    background-image: url(../header-background3.png);
+}
+.header{
+    z-index: 500;
+    height: 12vh;
+    width: 100%;
+    background-color: #284c79;
+    color: rgb(136, 172, 217);
+    opacity: 0.93;
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+}
+.header li{
+    width: 100px;
+    height: 85px;
+    background-color: rgba(52, 73, 94,1.0);
+    padding: 20px 0 0 0px;
+    text-align: center;
+    float: right;
+    list-style: none;
+    margin-left: 1px ;
+    
+}
+.header li a{
+    font-family:cursive;
+    text-decoration: underline;
+    color: rgb(136, 172, 217);
+}
+.header li a:hover{
+    font-size: 12px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    color: ghostwhite;
+}
+.header-placeholder{
+    margin: 0 0 0 0;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+.fixed .header-inner{
+    padding: 0 20px;
+}
+.fixed .header-inner-most{
+    max-width:1160px;
+    margin: 0 auto;
+     background-color: #284c79;
+}
+#blogg-aside{
+    height: 82vh;
+    width: 18vw;
+    background-color:#284c79;
+    color: white;
+    border: 1px solid red;
+    position: fixed;
+    bottom: 0px;
+    right: 1px;
+    
+}
+.aside-inner{
+    height: 40vh;
+    width: 95%;
+    margin-top:-10px; 
+}
+marquee{
+    height: 37vh
+    
+}
+#blogg-aside ul{
+    text-decoration: none;
+}
+#blogg-aside ul li{
+    list-style:none;
+    font-size: 15px;
+}
+.box-blogger{
+  margin-bottom:2vh;
+}
+blockquote{
+  display:block;
+  background: #ffff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: font-family: 'Cookie', cursive;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+  content: "\201C"; 
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  content: "";
+}
+blockquote .blogg-by{
+    display: inline-block;
+    font-size: 2.7vh;
+    font-family: inherit;
+    color: #C76C0C;
+}
+blockquote .blogg-social{
+  display: inline-block;
+  float: right;
+  height: 7vh;
+  padding: 15px 5px;
+}
+blockquote .blogger-heading{
+  height: 40px;
+  border-bottom:1px solid white;
+}
+blockquote:hover{
+   -ms-transform: scale(1.01,1.01); /* IE 9 */
+    -webkit-transform: scale(1.01,1.01); /* Safari */
+    transform: scale(1.01,1.01); /* Standard syntax */ 
+}
